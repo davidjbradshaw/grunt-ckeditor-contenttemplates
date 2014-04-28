@@ -24,7 +24,7 @@ This plugin creates the configuration JavaScript file for the [CKEditor custom t
 
 ### Example template file
 
-'''html
+```html
 title: Image and Title
 image: template1.gif
 description: One main image with a title and text that surround the image.
@@ -37,7 +37,7 @@ description: One main image with a title and text that surround the image.
 <p>
   Type the text here
 </p>
-'''
+```
 
 ### Example Grunt Config
 
