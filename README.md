@@ -1,4 +1,5 @@
 # grunt-ckeditor-contenttemplates
+[![Build Status](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates.svg?branch=master)](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates) 
 
 > Create config file for [CKEditor custom templates](http://ckeditor.com/addon/templates) plugin.
 
