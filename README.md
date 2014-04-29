@@ -1,6 +1,6 @@
 # grunt-ckeditor-contenttemplates
 
-> Create config file for CKEditor Content Templates plugin.
+> Create config file for [CKEditor custom templates](http://ckeditor.com/addon/templates) plugin.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
@@ -20,7 +20,9 @@ grunt.loadNpmTasks('grunt-ckeditor-contenttemplates');
 ## The "ckeditor_contenttemplates" task
 
 ### Overview
-This plugin creates the configuration JavaScript file for the [CKEditor custom templates](http://ckeditor.com/addon/templates) plugin. 
+This plugin creates the configuration JavaScript file for the [CKEditor custom templates](http://ckeditor.com/addon/templates) plugin. To use the plugin you need to create a template file for each custom template that you wish to include. This plugin will then generate the default.js configuration file from these.
+
+*Note: this plugin only creates the JavaScript file, use [grunt-contrib-copy](/gruntjs/grunt-contrib-copy) to place the icons into the `templates/images/` folder of your project.*
 
 ### Example template file
 
@@ -44,9 +46,8 @@ description: One main image with a title and text that surround the image.
 ```js
 grunt.initConfig({
   ckeditor_contenttemplates: {
-    options: {},
     files: {
-      'dest/default.js': ['templates/**'],
+      'dest/templates/default.js': 'src/myTemplates/**',
     },
   },
 });
