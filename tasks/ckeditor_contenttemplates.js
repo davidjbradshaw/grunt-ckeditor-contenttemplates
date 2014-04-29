@@ -52,21 +52,22 @@ module.exports = function(grunt) {
 
         function makeProperty(line){
           function process(name,val){
-            return TAB + TAB + TAB + name + ": '" + val.replace(/'/,'"') + "',"; 
+            val = S(val.trim()).chompLeft("'").chompRight("'").s.replace(/\\\'/,'\'').replace(/'/,'\\\'');
+            return TAB + TAB + TAB + name + ": '" + val + "',"; 
           }
 
           return process.apply(null,line.split(':'));
         }
 
         function splitLines (lines){
-          return _.without(lines.split(CR),'');
+          return _.without(lines.split(CR),''); // Get rid of empty lines
         }
 
         var
             first      = true,
             parts      = templateContents.split('--'),
             attribs    = splitLines(parts[0]).map(makeProperty).join(CR),
-            HTMLString = TAB + TAB + 'html: ' + splitLines(parts[1]).map(wrapQuotes).join(CR);
+            HTMLString = TAB + TAB + TAB + 'html: ' + splitLines(parts[1]).map(wrapQuotes).join(CR);
 
         return  TAB + TAB + '{' + CR +
                 attribs + CR +
