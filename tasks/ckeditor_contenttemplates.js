@@ -19,10 +19,6 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('ckeditor_contenttemplates', 'Create config file for CKEditor Content Templates plugin.', function() {
     // Merge task-specific and/or target-specific options with these defaults.
-    var options = this.options({
-      punctuation: '.',
-      separator: ', '
-    });
 
     var 
         CR  = grunt.util.normalizelf('\n'),
@@ -74,7 +70,7 @@ module.exports = function(grunt) {
                 S(HTMLString).chompRight(' +').s + CR +
                 TAB + TAB + '}';
 
-      }).join(grunt.util.normalizelf(options.separator)+CR);
+      }).join(grunt.util.normalizelf(','+CR));
 
       var prefix =
           "CKEDITOR.addTemplates( 'default', {" + CR +
