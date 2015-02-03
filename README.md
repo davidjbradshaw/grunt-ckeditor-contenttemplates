@@ -1,5 +1,7 @@
 # grunt-ckeditor-contenttemplates
-[![Build Status](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates.svg?branch=master)](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates) ![license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)
+[![npm version](https://badge.fury.io/js/grunt-ckeditor-contenttemplates.svg)](http://badge.fury.io/js/grunt-ckeditor-contenttemplates)
+[![Build Status](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates.svg?branch=master)](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates) 
+![license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)
 
 > Create config file for [CKEditor custom templates](http://ckeditor.com/addon/templates) plugin.
 
