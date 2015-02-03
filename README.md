@@ -48,7 +48,7 @@ description: One main image with a title and text that surround the image.
 grunt.initConfig({
   ckeditor_contenttemplates: {
     files: {
-      'dest/templates/default.js': 'src/myTemplates/**',
+      'dest/': 'src/myTemplates/*',
     },
   },
 });
