@@ -1,5 +1,5 @@
 # grunt-ckeditor-contenttemplates
-[![Build Status](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates.svg?branch=master)](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates) 
+[![Build Status](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates.svg?branch=master)](https://travis-ci.org/davidjbradshaw/grunt-ckeditor-contenttemplates) ![license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)
 
 > Create config file for [CKEditor custom templates](http://ckeditor.com/addon/templates) plugin.
 
@@ -58,4 +58,9 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-* V0.1.0 First Release
+* v0.2.0 Code Refactor
+* v0.1.0 First Release
+
+## License
+Copyright &copy; 2014-15 [David J. Bradshaw](https://github.com/davidjbradshaw).
+Licensed under the [MIT license](http://opensource.org/licenses/MIT).
