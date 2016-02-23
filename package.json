@@ -1,7 +1,7 @@
 {
   "name": "grunt-ckeditor-contenttemplates",
   "description": "Create config file for CKEditor Content Templates plugin.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/davidjbradshaw/grunt-ckeditor-contenttemplates",
   "author": {
     "name": "David J. Bradshaw",
